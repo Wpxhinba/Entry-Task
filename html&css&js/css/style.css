@@ -1,0 +1,116 @@
+html,
+body {
+  font-size: 16px;
+  font-family: "Roboto";
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 1fr 4rem;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  background-color: #eeeeee;
+}
+
+main {
+  grid-area: main;
+  overflow: auto;
+  padding: 4rem;
+}
+
+header {
+  grid-area: header;
+  background-color: white;
+  box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#to-do_wrapper {
+  max-width: 50rem;
+  margin: auto;
+  background-color: white;
+  height: calc(100% - 8rem);
+  padding: 4rem;
+}
+
+ul#to-do_list {
+  margin: 0;
+  padding: 0;
+}
+
+#to-do_list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+#to-do_list li div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+#to-do_list li div input {
+  scale: 1.25;
+}
+
+#to-do_list li button {
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-out;
+}
+
+#to-do_list li button:hover {
+  background-color: white;
+  color: black;
+}
+
+#to-do_input {
+  border: 1px solid grey;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+#add_button {
+  border: 1px solid green;
+  background-color: green;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-out;
+}
+
+#add_button:hover {
+  background-color: white;
+  color: black;
+}
